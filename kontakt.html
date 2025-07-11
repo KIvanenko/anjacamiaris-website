@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anja Camiaris - Kontakt</title>
+  <link rel="stylesheet" href="website.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="logo">
+        <a href="home.html"><img src="logo/logo.png" class="logo-image"></a>
+      </div>
+      <nav class="desktop-nav">
+        <a href="home.html" class="nav-button">Home</a>
+        <a href="angebote.html" class="nav-button">Angebote</a>
+        <a href="freebies.html" class="nav-button">Freebies</a>
+        <a href="mein-weg.html" class="nav-button">Mein Weg</a>
+        <a href="termine.html" class="nav-button">Termine</a>
+        <a href="blog.html" class="nav-button">Blog</a>
+        <a href="kontakt.html" class="nav-button">Kontakt</a>
+      </nav>
+      <div class="burger-menu" id="burger-menu" aria-label="Menü öffnen" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav">
+        <a href="home.html" class="nav-button">Home</a>
+        <a href="angebote.html" class="nav-button">Angebote</a>
+        <a href="mein-weg.html" class="nav-button">Mein Weg</a>
+        <a href="termine.html" class="nav-button">Termine</a>
+        <a href="blog.html" class="nav-button">Blog</a>
+        <a href="kontakt.html" class="nav-button">Kontakt</a>
+        <a href="kontakt.html" class="cta-button">Schreib mir</a>
+      </nav>
+      <a href="kontakt.html" class="cta-button1" style="margin-top: 0px;">Schreib mir</a>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section" style="margin-top: 60px;">
+    <div class="container">
+      <div class="contact-header">
+        <h1>Kontakt</h1>
+        <p>Schreib mir eine Nachricht - ich freue mich von dir zu hören!</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Lass uns in Verbindung bleiben</h3>
+          <p>Du hast Fragen zu meinen Angeboten oder möchtest mehr über meine Arbeit erfahren? Ich bin gerne für dich da!</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <img src="icons/message-circle-heart-svgrepo-com.svg" alt="Email" class="contact-icon">
+              <div>
+                <h4>Email</h4>
+                <p>team@anjacamiaris.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <img src="icons/clock-svgrepo-com.svg" alt="Zeit" class="contact-icon">
+              <div>
+                <h4>Antwortzeit</h4>
+                <p>Innerhalb von 24 Stunden</p>
+              </div>
+            </div>
+          </div>
+          <!-- Greeting with photo -->
+          <div class="contact-greeting">
+            <div class="greeting-text-block">
+              <span class="greeting-text">Liebevolle Grüße,</span><br>
+              <span class="greeting-name">Anja Camiaris</span>
+            </div>
+            <img src="img/AnjaCamiarisSchreibemirHPWeb.jpg" alt="Anja Camiaris">
+          </div>
+          <!-- End Greeting -->
+        </div>
+        
+        <div class="contact-form-container">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="service">Wähle deine Leistung:</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Bitte wählen...</option>
+                <option value="Individuelle 1:1 Begleitung">Individuelle 1:1 Begleitung</option>
+                <option value="Heilstrahlenausbildung">Heilstrahlenausbildung</option>
+                <option value="Lichtträgerschaft der Liebe">Lichtträgerschaft der Liebe</option>
+                <option value="Live‑Channeling mit Impulsabend">Live‑Channeling mit Impulsabend</option>
+                <option value="Gechannelte Seelenfragen">Gechannelte Seelenfragen</option>
+                <option value="Freudiges Kaufen">Freudiges Kaufen</option>
+                <option value="Sonstiges">Sonstiges</option>
+              </select>
+            </div>
+            
+            <div class="form-group" id="begleitung-options-group" style="display: none;">
+              <label for="begleitung-option">Wähle dein 1:1 Angebot:</label>
+              <select id="begleitung-option" name="begleitung-option">
+                <option value="" disabled selected>Bitte wählen...</option>
+                <option value="Impuls-Session">Impuls-Session</option>
+                <option value="Entfaltungs-Paket">Entfaltungs-Paket</option>
+                <option value="Transformations-Reise">Transformations-Reise</option>
+              </select>
+            </div>
+
+            <div class="form-group" id="heilstrahlenausbildung-options-group" style="display: none;">
+              <label for="heilstrahlenausbildung-option">Wähle deine Variante:</label>
+              <select id="heilstrahlenausbildung-option" name="heilstrahlenausbildung-option">
+                <option value="" disabled selected>Bitte wählen...</option>
+                <option value="Variante 1: MP3-Download">Variante 1: MP3-Download</option>
+                <option value="Variante 2: Physische CDs">Variante 2: Physische CDs</option>
+                <option value="Variante 3: Premium">Variante 3: Premium</option>
+              </select>
+            </div>
+
+            <div class="form-group" id="freudiges-kaufen-options-group" style="display: none;">
+              <label for="freudiges-kaufen-option">Wähle dein Produkt:</label>
+              <select id="freudiges-kaufen-option" name="freudiges-kaufen-option">
+                <option value="" disabled selected>Bitte wählen...</option>
+                <option value="Buch: Meine Channeling Fibel">Buch: Meine Channeling Fibel</option>
+                <option value="Wundervoller energie-Engel Kalender 2025">Wundervoller energie-Engel Kalender 2025</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Deine Nachricht an mich *</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="datenschutz" name="datenschutz" required>
+                <span class="checkmark"></span>
+                Ich stimme der <a href="#" class="datenschutz-link">Datenschutzerklärung</a> zu *
+              </label>
+            </div>
+            
+            <button type="submit" class="submit-button">
+              Nachricht senden
+              <img src="icons/send-arrow.svg" alt="Arrow" class="submit-arrow">
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donations Section -->
+  <section class="donations-section">
+    <div class="container">
+      <div class="donations-content">
+        <div class="donations-info">
+          <div class="trademark-info">
+            <h3>Eingetragene Marke</h3>
+            <p class="trademark-text">
+              ® Seit dem 14. Februar 2011 ist "Bewusst Sein im Inntal ®" mit meinen Angeboten eine EU-weit eingetragene Marke!
+            </p>
+          </div>
+          
+          <div class="bank-details">
+            <h3>Bankverbindung</h3>
+            <div class="bank-info">
+              <div class="bank-item">
+                <strong>Kontoinhaber:</strong> Anja Treumann
+              </div>
+              <div class="bank-item">
+                <strong>Bank:</strong> meine Volksbank Raiffeisenbank eG
+              </div>
+              <div class="bank-item">
+                <strong>IBAN:</strong> DE68 7116 0000 0005 9081 67
+              </div>
+              <div class="bank-item">
+                <strong>BIC:</strong> GENODEF1VRR
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="donations-image">
+          <img src="events/donation-anja.png" alt="Anja Camiaris" class="donation-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-background">
+    <div class="footer">
+      <div class="footer-bottom"></div>
+  
+    <div class="footer-container">
+      <div class="footer-section logo">
+        <img src="logo/logo.png" alt="cosmophone Logo" class="logo-image-footer">
+      </div>
+      
+      <div class="footer-section">
+        <h3>Angebote</h3>
+        <p ><a href="#">1:1 Treff</a></p>
+        <p><a href="#">Online Webinare</a></p>
+        <p><a href="#">Gratis</a></p>
+        <p><a href="#">Online Kurse</a></p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <p ><a href="wellcome.html#about">Mein Weg</a></p>
+        <p><a href="#">AGB</a></p>
+        <p><a href="#">Datenschutz</a></p>
+        <p><a href="impressum.html">Impressum</a></p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Kontakt</h3>
+        <p><a href="kontakt.html">Kontakt Formular</a></p>
+        <p><img src="svg-icons/Mail Icon.svg" alt="Email Icon" class="footer-icon"> <a href="mailto:team@anjacamiaris.com">team@anjacamiaris.com</a></p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom-one">
+      <p>Anja Camiaris Treumann © 2003 - 2025</p>
+      <div style="display: inline-flex; gap: 10px;">
+        <a onclick="window.open('https://www.instagram.com/Cosmophone/', '_blank')">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="social-icon">
+        </a>
+          <a onclick="window.open('https://www.youtube.com/Cosmophone/', '_blank')">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const burgerMenu = document.getElementById('burger-menu');
+    const mobileNav = document.getElementById('mobile-nav');
+    
+    burgerMenu.addEventListener('click', function() {
+      burgerMenu.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    
+    // Contact form submission
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Here you would typically send the form data to your server
+      alert('Vielen Dank für deine Nachricht! Ich werde mich bald bei dir melden.');
+      this.reset();
+    });
+
+  // Navigation active state
+  function setActiveNavItem() {
+    const currentPage = window.location.pathname.split('/').pop() || 'home.html';
+    const navButtons = document.querySelectorAll('.nav-button');
+    
+    navButtons.forEach(button => {
+      const href = button.getAttribute('href');
+      // Never set Home as active
+      if (href === 'home.html') {
+        button.classList.remove('active');
+        return;
+      }
+      if (href === currentPage) {
+        button.classList.add('active');
+      } else {
+        button.classList.remove('active');
+      }
+    });
+  }
+
+    // Show/hide conditional options for services
+    document.getElementById('service').addEventListener('change', function() {
+      var begleitungGroup = document.getElementById('begleitung-options-group');
+      var heilstrahlenausbildungGroup = document.getElementById('heilstrahlenausbildung-options-group');
+      var freudigesKaufenGroup = document.getElementById('freudiges-kaufen-options-group');
+      // Hide all by default
+      begleitungGroup.style.display = 'none';
+      heilstrahlenausbildungGroup.style.display = 'none';
+      freudigesKaufenGroup.style.display = 'none';
+      document.getElementById('begleitung-option').selectedIndex = 0;
+      document.getElementById('heilstrahlenausbildung-option').selectedIndex = 0;
+      document.getElementById('freudiges-kaufen-option').selectedIndex = 0;
+      // Show relevant group
+      if (this.value === 'Individuelle 1:1 Begleitung') {
+        begleitungGroup.style.display = 'block';
+      } else if (this.value === 'Heilstrahlenausbildung') {
+        heilstrahlenausbildungGroup.style.display = 'block';
+      } else if (this.value === 'Freudiges Kaufen') {
+        freudigesKaufenGroup.style.display = 'block';
+      }
+    });
+  </script>
+  <div class="fixed-frame"></div>
+</body>
+</html>
