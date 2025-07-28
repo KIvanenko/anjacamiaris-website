@@ -20,6 +20,7 @@
       <nav class="desktop-nav">
         <a href="index.html" class="nav-button">Home</a>
         <a href="angebote.html" class="nav-button">Angebote</a>
+        <a href="kurse.html" class="nav-button">Kurse</a>
         <a href="mein-weg.html" class="nav-button">Mein Weg</a>
         <a href="termine.html" class="nav-button">Termine</a>
         <a href="blog.html" class="nav-button">Blog</a>
@@ -42,6 +43,34 @@
       <a href="kontakt.html" class="cta-button1" style="margin-top: 0px;">Schreib mir</a>
     </div>
   </header>
+
+  <!-- Waiting List Section -->
+  <section class="waitinglist-section">
+    <div class="waitinglist-container waitinglist-vertical">
+      <div class="waitinglist-image-block" style="width: 100%; display: flex; justify-content: center;">
+        <img src="img/AnjaCamiarisAhnenuSeelensprechstundeOnlineWebinar.jpg" alt="Anja Camiaris Webinar" class="waitinglist-image">
+      </div>
+      <div class="waitinglist-content-block" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+        <h2 class="waitinglist-heading" style="text-align: center;">Warteliste für meinen neuen Kurs</h2>
+        <p class="waitinglist-text" style="text-align: center;">Der neue Kurs ist gerade in Vorbereitung! Trag dich jetzt in die Warteliste ein und sei unter den Ersten, die informiert werden, sobald die Anmeldung startet. So sicherst du dir die Chance auf einen der ersten Plätze!</p>
+        <form class="waitinglist-form" id="waitinglist-form" onsubmit="return false;" style="width: 100%; max-width: 350px;">
+          <div class="waitinglist-form-group">
+            <label for="waitinglist-name">Name:</label>
+            <input type="text" id="waitinglist-name" name="name" required>
+          </div>
+          <div class="waitinglist-form-group">
+            <label for="waitinglist-email">E-Mail:</label>
+            <input type="email" id="waitinglist-email" name="email" required>
+          </div>
+          <div class="waitinglist-datasecurity">
+            <input type="checkbox" id="waitinglist-datasecurity" name="datasecurity" required>
+            <label for="waitinglist-datasecurity">Ich akzeptiere die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>.</label>
+          </div>
+          <button type="submit" class="cta-button1">Zur Warteliste anmelden</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer-background">
     <div class="footer">
